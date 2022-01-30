@@ -1,0 +1,12 @@
+.color-game-title {
+  font-family: sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  background-image: url("https://media3.giphy.com/media/xUPGcoeymFuvT4NnFu/giphy.gif");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

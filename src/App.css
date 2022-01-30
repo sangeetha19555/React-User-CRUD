@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.App {
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  /* background-color: yellow; */
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.welcome-text {
+  font-family: sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  background-image: url("https://media.istockphoto.com/photos/beautiful-flowers-background-picture-id520700958?k=20&m=520700958&s=612x612&w=0&h=fTWRwsQ_vxzlzR0MGkLPGzqolbbpbj4x-VOL9FmEz3A=");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+h1 {
+  text-align: center;
+}
+.user-contianer-box {
+  width: 95vw;
+  /* background-color: blueviolet; */
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-gap: 20px;
+}
+.user_container {
+  width: 240px;
+  height: max-content;
+  padding: 0px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.user_container img {
+  width: 238px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.user_container-info {
+  /* background-color: white; */
+  padding: 10px;
+}
+.user_container-info .user-name {
+  color: darkblue;
+}
+.icons-box {
+  display: flex;
+  justify-content: space-between;
+}
+.like-container {
+  padding: 20px 10px 10px 10px;
+}
+.icon-container {
+  padding: 20px 10px 10px 10px;
+}
+.deleteIcon {
+  margin: 0px 0px 0px 10px;
+}
+/* menu bar */
+.main-menu {
+  background-color: #009688;
+  padding: 8px 20px;
+}
+.Adduser-container {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.Adduser-container .input-box {
+  margin: 10px 0;
+}
+.Adduser-container .input-box_button {
+  background-color: black;
+  margin: 10px 0px 30px;
+}
+.Adduser-container .input-box_button:hover {
+  background-color: cadetblue;
+}
+
+/* @media (max-width: 1024px) {
+  .user-contianer-box {
+    background-color: green;
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+@media (min-width: 1240px) {
+  .user-contianer-box {
+    /* background-color: red; */
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .user-contianer-box {
+    /* background-color: green; */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 991px) {
+  .user-contianer-box {
+    /* background-color: cornflowerblue; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .user-contianer-box {
+    /* background-color: tomato; */
+    width: 100vw;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
