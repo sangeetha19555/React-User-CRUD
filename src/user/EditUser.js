@@ -8,7 +8,7 @@ export function EditUser() {
   const { user_id } = useParams(); //important
   const [user, setUser] = useState(null);
   useEffect(() => {
-    fetch(`https://614ed775b4f6d30017b483a0.mockapi.io/sample/${user_id}`, {
+    fetch(`https://614ed775b4f6d30017b483a0.mockapi.io/samples/${user_id}`, {
       method: "GET",
     })
       .then((data) => data.json())
@@ -33,7 +33,7 @@ function UpdatedNewUser({ user }) {
       pic,
     };
     console.log(updatedUser);
-    fetch(`https://614ed775b4f6d30017b483a0.mockapi.io/sample/${user.id}`, {
+    fetch(`https://614ed775b4f6d30017b483a0.mockapi.io/samples/${user.id}`, {
       method: "PUT",
       body: JSON.stringify(updatedUser),
       headers: { "Content-type": "application/json" },

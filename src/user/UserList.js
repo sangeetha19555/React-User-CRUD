@@ -12,7 +12,7 @@ export function UserList() {
   const history = useHistory();
   const [user, setUser] = useState([]);
   const getUsers = () => {
-    fetch("https://614ed775b4f6d30017b483a0.mockapi.io/sample", {
+    fetch("https://614ed775b4f6d30017b483a0.mockapi.io/samples", {
       method: "GET",
     })
       .then((data) => data.json())
@@ -21,7 +21,7 @@ export function UserList() {
   useEffect(getUsers, []);
   //calling the delete method and refreshing the user using getUsers Method..
   const removeUser = (id) => {
-    fetch(`https://614ed775b4f6d30017b483a0.mockapi.io/sample/${id}`, {
+    fetch(`https://614ed775b4f6d30017b483a0.mockapi.io/samples/${id}`, {
       method: "DELETE",
     }).then(() => getUsers());
   };
