@@ -24,7 +24,7 @@ export function Adduser({ user, setUser }) {
     //2.body: data & JSON
     //3.header - JSON data
 
-    fetch("https://614ed775b4f6d30017b483a0.mockapi.io/samples", {
+    fetch("https://614ed775b4f6d30017b483a0.mockapi.io/sample", {
       method: "POST",
       body: JSON.stringify(newuser),
       headers: { "Content-type": "application/json" },
